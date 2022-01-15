@@ -64,7 +64,9 @@ let family = [
     }
 ];
 
-family.forEach(checkAge(family.name, family.age));
+for(let b = 0; b < family.length; b++) {
+    checkAge(family[b].name, family[b].age); 
+}
 
 
 function getLength(word) {
@@ -72,7 +74,7 @@ function getLength(word) {
     if(word.length % 2 == 0) {
         console.log("The worls is nice and even!");
     } else {
-        console.log("The World is an odd place");
+        console.log("The World is an odd plac!");
     }
 }
 
